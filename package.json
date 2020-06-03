@@ -1,7 +1,7 @@
 {
   "name": "reactnext",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
@@ -13,6 +13,6 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "node server.js"
   }
 }
