@@ -1,11 +1,11 @@
 const express = require("express");
 const next = require("next");
 
-const dev = process.env.NODE_ENV === "development";
+const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 3333;
 
 (async () => {
   try {
