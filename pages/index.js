@@ -1,15 +1,21 @@
 import React from "react";
 
 import Link from "next/link";
+import Head from "next/head";
 
 function Home({ repositories }) {
   return (
-    <div>
-      <Link href="/sobre">
-        <a>Ir para pagina sobre</a>
-      </Link>
+    <div id="page-root">
+      <Head>
+        <title>gglass</title>
+        <link href="/static/styles.css" rel="stylesheet" />
+      </Head>
+
+      <h1>GGlass</h1>
+      <h2>Em construção</h2>
+
       {repositories.map((repo) => (
-        <h1 key={repo.id}>{repo.name}</h1>
+        <p key={repo.id}>{repo.name}</p>
       ))}
     </div>
   );
