@@ -11,7 +11,7 @@ function Home() {
         <link href="/static/styles.css" rel="stylesheet" />
       </Head>
 
-      <h1>GGlass</h1>
+      <h1>GGlass!</h1>
       <h2>Em construção</h2>
     </div>
   );
